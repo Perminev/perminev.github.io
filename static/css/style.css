@@ -22,8 +22,6 @@ body {
   color:#F7F9FB;
   /* Changing cursor */
   cursor: url('../cur/arrow.cur'), default;
-  cursor: url('../cur/link.cur'), pointer;
-  cursor: url('../cur/beam.cur'), text;
 
 }
 
