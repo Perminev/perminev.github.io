@@ -20,6 +20,8 @@ body {
   background: linear-gradient(180deg, #31708E 0%, #204a5c 100%);
   /* color: #ffffff; */
   color:#F7F9FB;
+  /* Changing cursor */
+  cursor: url('./cur/arrow.cur'), auto;
 
 }
 
