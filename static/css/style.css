@@ -21,7 +21,7 @@ body {
   /* color: #ffffff; */
   color:#F7F9FB;
   /* Changing cursor */
-  cursor: url('../cur/arrow.cur'), auto;
+  cursor: url('../cur/arrow.cur'), default;
 
 }
 
