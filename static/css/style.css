@@ -23,6 +23,7 @@ body {
   /* Changing cursor */
   cursor: url('../cur/arrow.cur'), default;
   cursor: url('../cur/link.cur'), pointer;
+  cursor: url('../cur/beam.cur'), text;
 
 }
 
