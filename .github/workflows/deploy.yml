@@ -1,19 +1,26 @@
 name: Deploy Website
 
-on: [push]
+on:
+  push:
+    branches:
+      - main  # Заменить на ветку, которую ты используешь
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # Шаг для клонирования репозитория
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      # Шаг для создания config.js с API-ключом
       - name: Create config.js
-        run: echo "const WEB3FORMS_API_KEY = '${{ secrets.WEB3FORMS_API_KEY }}';" > public/config.js
+        run: |
+          echo "const WEB3FORMS_API_KEY = '${{ secrets.WEB3FORMS_API_KEY }}';" > config.js
 
+      # Шаг для деплоя на GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
-          folder: public
+          branch: gh-pages  # Папка для деплоя (можно использовать 'gh-pages' или другую)
+          folder: .  # Путь к папке с файлами (если корень репозитория)
