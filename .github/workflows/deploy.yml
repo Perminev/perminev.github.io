@@ -20,7 +20,9 @@ jobs:
 
       # Шаг для деплоя на GitHub Pages
       - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # Используем токен для авторизации
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # Папка для деплоя (можно использовать 'gh-pages' или другую)
-          folder: .  # Путь к папке с файлами (если корень репозитория)
+          branch: gh-pages  # Папка для деплоя
+          folder: .  # Путь к папке с файлами
