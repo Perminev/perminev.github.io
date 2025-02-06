@@ -26,3 +26,4 @@ jobs:
         with:
           branch: gh-pages  # Папка для деплоя
           folder: .  # Путь к папке с файлами
+          clean: true
