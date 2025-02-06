@@ -3,7 +3,7 @@
 /* === АДАПТИВНОСТЬ ДЛЯ ПЛАНШЕТОВ (1024px) === */
 @media (max-width: 1024px) {
     nav {
-      display: none;
+      padding: 10px 50px;
     }
   
     .main-list {
