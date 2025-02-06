@@ -150,7 +150,7 @@
       <section class="main__feedback feedback" id="feedback">
         <h2 class="feedback__title">ОБРАТНАЯ СВЯЗЬ</h2>
         <div class="feedback__form form"style="text-align: center;">
-          <form action="https://api.web3forms.com/submit" method="POST">
+          <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
 
             <input type="hidden" name="access_key" value="">
 
@@ -172,7 +172,7 @@
 
       </section>
       <script src="./static/scripts/script.js"></script>
-      <script src="https://raw.githubusercontent.com/Perminev/perminev.github.io/refs/heads/gh-pages/config.js"></script>
+      <script src="../config.js"></script>
       <script>
           document.getElementById("contactForm").addEventListener("submit", async function(event) {
               event.preventDefault();
