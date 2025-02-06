@@ -90,6 +90,13 @@ body {
       flex-direction: column;
       text-align: center;
     }
+
+    .about__title, 
+    .skills__title, 
+    .feedback__title {
+      font-size: 30px;
+      text-align: center;
+    }
   }
   
   /* === АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ (768px) === */
