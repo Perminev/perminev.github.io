@@ -24,6 +24,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # Используем секретный токен
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # Ветка для деплоя
-          folder: .  # Что деплоить (весь проект)
-          clean: true  # Очищает старые файлы перед загрузкой
+          branch: gh-pages
+          folder: .
+          clean: true
+          token: ${{ secrets.DEPLOY_TOKEN }}  # Указываем явно
